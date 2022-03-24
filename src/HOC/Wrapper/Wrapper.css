@@ -1,0 +1,9 @@
+.showSidebar {
+  margin-left: 140px;
+}
+
+@media (max-width: 1000px) {
+  .showSidebar {
+    margin-left: 0px;
+  }
+}

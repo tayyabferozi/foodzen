@@ -1,0 +1,149 @@
+.mixture-card {
+	width: 100%;
+	height: 326px;
+
+	background: linear-gradient(
+		97.28deg,
+		rgba(2, 149, 255, 0.19) 1.47%,
+		rgba(2, 149, 255, 0.01) 94.19%
+	);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	padding: 2rem 1.375rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	gap: 1rem;
+}
+
+.mixture-card-images {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.mixture-card-images img {
+	width: clamp(70px, 8.34vw, 121px);
+	height: clamp(70px, 8.34vw, 121px);
+	border-radius: 50%;
+	/* border: 2px solid red; */
+}
+.add-sign {
+	width: clamp(20px, 2.5vw, 37px);
+	height: clamp(20px, 2.5vw, 37px);
+
+	position: relative;
+}
+.add-sign::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 0%;
+	border: 2px solid #ffffff;
+}
+.add-sign::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 0%;
+	height: 100%;
+
+	border: 2px solid #ffffff;
+}
+
+.mixture-card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #c4c4c4;
+	z-index: -1;
+}
+
+.mixture-card-title {
+	width: 100%;
+	max-width: 283.54px;
+
+	font-style: normal;
+	font-weight: bold;
+	/* font-size: 0.938rem; */
+	line-height: 20px;
+
+	text-align: center;
+
+	color: rgba(255, 255, 255, 0.85);
+
+	margin: 0 auto;
+}
+
+.mixture-card-btns {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.mixture-card-btns button {
+	flex: 1;
+	flex-basis: 130px;
+
+	padding: 7px 27px;
+
+	font-weight: bold;
+
+	border-radius: 40px;
+
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.mixture-card-btns a:nth-child(1) {
+	background-color: white;
+	border-radius: 40px;
+	color: #0295ff;
+}
+
+.mixture-card-btns a:nth-child(1) button {
+	background-color: white;
+	color: #0295ff;
+}
+
+.mixture-card-btns button:nth-child(1) a {
+	color: #0295ff;
+}
+
+.mixture-card-btns a:nth-child(2) {
+	background-color: transparent;
+	border-radius: 40px;
+	color: white;
+	border: 1px solid #ffffff;
+}
+
+.mixture-card-btns a:nth-child(2) button {
+	color: white;
+	background-color: transparent;
+}
+
+@media (max-width: 760px) {
+	.mixture-card {
+		flex: 1;
+		height: 100%;
+
+		padding: 1.8rem 1rem;
+	}
+}

@@ -1,0 +1,5 @@
+.food-item-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

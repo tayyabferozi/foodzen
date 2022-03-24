@@ -1,0 +1,50 @@
+.ingredients-header {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: clamp(20px, 6.25vw, 90px);
+
+  margin-bottom: 30px;
+}
+
+.ingredients-cards-wrapper {
+  margin-bottom: 51px;
+  width: 100%;
+}
+
+.ingredients-header-line {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+.ingredients-header-line::before {
+  content: "";
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 0px;
+  margin-right: 20px;
+}
+
+.ingredients-header-btns {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.rounded-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0295ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ingredients-cards {
+  /* max-width: 1230px; */
+}

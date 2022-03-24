@@ -1,0 +1,36 @@
+.accordion {
+  background: #ffffff;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  /* overflow: hidden; */
+}
+
+.accordion-header {
+  display: flex;
+  padding: 1.875rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.accordion-btn {
+  transform: rotate(180deg);
+  transition: all 0.2s ease;
+}
+.accordion-btn.active {
+  transform: rotate(0deg);
+}
+.accordion-body {
+  transition: all 0.2s ease;
+  height: 0;
+  overflow: hidden;
+}
+.accordion-body-wrapper {
+  padding: 30px;
+  padding-top: 0px;
+}
+
+.accordion-body p {
+  line-height: 28px;
+}

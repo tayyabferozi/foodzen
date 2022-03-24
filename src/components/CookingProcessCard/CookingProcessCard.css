@@ -1,0 +1,29 @@
+.cooking-process-card {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2.5vw, 37px);
+}
+
+.cooking-process-count {
+  width: clamp(55px, 5.625vw, 83px);
+  height: clamp(55px, 5.625vw, 83px);
+  background: #e4f9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: bold;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #333333;
+
+  border-radius: 50%;
+}
+
+.cooking-process-disc {
+  line-height: 22px;
+}

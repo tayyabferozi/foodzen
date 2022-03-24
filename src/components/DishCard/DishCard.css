@@ -1,0 +1,42 @@
+.dish-card {
+  background: #ffffff;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+
+  padding: 0.938rem;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 34px;
+}
+
+.dish-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dish-view-recipe-btn {
+  background: #ffffff;
+
+  border: 1px solid #0295ff;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.016);
+  border-radius: 10px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+
+  text-align: center;
+
+  color: #0295ff;
+
+  padding: 7px 15px;
+  cursor: pointer;
+
+  display: inline-block;
+}

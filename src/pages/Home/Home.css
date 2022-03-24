@@ -1,0 +1,122 @@
+/* 1st-section */
+.food-items-wrapper {
+	display: flex;
+	gap: clamp(12px, 1vw, 30px);
+}
+
+.dark {
+	color: #000;
+}
+
+.food-items-left {
+	flex: 1;
+}
+.food-items-right {
+	width: 340px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 21px;
+}
+
+.food-item-cards {
+	display: flex;
+	margin-top: clamp(20px, 3.888888888888889vw, 58px);
+	gap: clamp(12px, 1vw, 30px);
+	flex-wrap: wrap;
+}
+
+.food-item-card {
+	flex: 1;
+	flex-basis: 260px;
+
+	background: #ffffff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+
+	padding: 1.563rem clamp(13px, 1.0416666666666667vw, 17px);
+}
+
+/* overview-card */
+.overview-cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 28px;
+}
+
+/* 2nd-section */
+.cooking-process-wrapper {
+	background: #ffffff;
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	/* padding: clamp(2rem,3.6811111111111114vw,3.4rem) 3.313rem 4.063rem; */
+
+	padding-top: clamp(2rem, 3.6811111111111114vw, 3.4rem);
+	padding-bottom: clamp(2rem, 3.6811111111111114vw, 3.4rem);
+	padding-left: clamp(2rem, 4.514444444444444vw, 4.1rem);
+	padding-right: clamp(2rem, 4.514444444444444vw, 4.1rem);
+
+	margin-top: 15px;
+}
+
+.cooking-process-header {
+	padding-top: clamp(0px, 2.5vw, 36px);
+	padding-bottom: clamp(20px, 2.5vw, 36px);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cooking-process-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	/* width: 239.88px;
+  height: 61.17px; */
+
+	background: #0295ff;
+	border: 1px solid #ffffff;
+	box-sizing: border-box;
+	border-radius: 40px;
+
+	color: white;
+
+	cursor: pointer;
+
+	text-decoration: none;
+
+	padding-top: clamp(11px, 1.5277777777777777vw, 23px);
+	padding-bottom: clamp(11px, 1.5277777777777777vw, 23px);
+
+	padding-left: clamp(18px, 4.236111111111111vw, 62px);
+	padding-right: clamp(18px, 4.236111111111111vw, 62px);
+}
+
+.cooking-process-body {
+	padding: 37px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+@media (max-width: 900px) {
+	.food-items-wrapper {
+		display: flex;
+		gap: 1vw;
+		flex-direction: column;
+	}
+
+	.food-items-right {
+		flex-direction: column-reverse;
+		width: 100%;
+		margin-top: 0.5rem;
+		gap: 1rem;
+	}
+
+	.biryani-img > img {
+		width: 100% !important;
+	}
+}

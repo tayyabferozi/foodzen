@@ -1,0 +1,26 @@
+.search-result-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #7aaf81;
+
+  /* width: 101px; */
+  height: 26px;
+}
+
+.search-result-card p {
+  flex: 1;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.cross-icon {
+  width: 26px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #cabebe;
+  cursor: pointer;
+}
